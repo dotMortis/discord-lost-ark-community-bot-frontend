@@ -1,0 +1,32 @@
+.p-selectbutton {
+    .p-button {
+        padding: 0.4rem;
+        min-height: 2.15rem !important;
+        &:not(.p-highlight) {
+            background-color: var(--surface-a);
+            border-color: var(--surface-c);
+            color: var(--text-disabled-color) !important;
+            &:focus,
+            &:hover {
+                color: var(--text-color) !important;
+                border-color: var(--surface-c) !important;
+                background-color: var(--surface-a) !important;
+            }
+        }
+        > span {
+            text-align: center;
+            margin: auto;
+        }
+        &.p-highlight {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: $color--white;
+            &:focus,
+            &:hover {
+                color: $color--white;
+                border-color: var(--primary-color);
+                background-color: var(--primary-color);
+            }
+        }
+    }
+}

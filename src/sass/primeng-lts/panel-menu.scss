@@ -1,0 +1,110 @@
+.p-panelmenu {
+  margin-left: 0px;
+  .p-menuitem-text {
+    line-height: 1;
+  }
+
+  .p-panelmenu-header {
+    padding: 0;
+    & > a {
+      padding: 0.8rem;
+    }
+  }
+  .p-panelmenu-content {
+    background-color: var(--surface-a);
+  }
+}
+
+.p-panelmenu {
+  background-color: $sidebar-color;
+  .p-panelmenu-panel {
+    box-shadow: none !important;
+  }
+  a {
+    border-radius: 2px !important;
+    background-color: var(--surface-b) !important;
+    color: var(--text-color);
+    border: none !important;
+    > .p-panelmenu-icon,
+    .p-menuitem-icon,
+    .p-menuitem-text {
+      color: var(--text-color);
+    }
+    &:focus {
+      box-shadow: none !important;
+    }
+    &:hover {
+      background-color: var(--primary-color) !important;
+      > .p-panelmenu-icon,
+      .p-menuitem-icon,
+      .p-menuitem-text {
+        color: $color--white !important;
+      }
+    }
+    &.p-menuitem-link-active {
+      > .p-panelmenu-icon,
+      .p-menuitem-icon,
+      .p-menuitem-text {
+        color: $primaryColor;
+      }
+    }
+  }
+  .p-panelmenu-content {
+    padding-left: 5px;
+    a {
+      > .p-menuitem-icon {
+        min-width: 44px;
+        margin-right: 0;
+      }
+      &:not(.p-menuitem-link-active) > .p-panelmenu-icon,
+      .p-menuitem-icon,
+      .p-menuitem-text {
+        color: var(--text-color) !important;
+      }
+      background-color: var(--surface-a) !important;
+      &:focus {
+        box-shadow: none !important;
+      }
+      &:hover {
+        background-color: var(--primary-color) !important;
+        > .p-panelmenu-icon,
+        .p-menuitem-icon,
+        .p-menuitem-text {
+          color: $color--white !important;
+        }
+      }
+      &.p-menuitem-link-active {
+        &:not(:hover) {
+          .p-panelmenu-icon,
+          .p-menuitem-icon,
+          .p-menuitem-text {
+            color: var(--primary-color) !important;
+          }
+        }
+        &:hover {
+          .p-panelmenu-icon,
+          .p-menuitem-icon,
+          .p-menuitem-text {
+            color: $color--white !important;
+          }
+        }
+      }
+    }
+  }
+  .p-panelmenu-header-link {
+    display: flex;
+    align-items: center !important;
+    > .p-panelmenu-icon {
+      order: 1;
+      margin-left: auto;
+    }
+    > .p-menuitem-icon {
+      min-width: 44px;
+      margin-right: 0;
+    }
+  }
+}
+
+.p-menuitem .p-submenu-list {
+  background-color: var(--surface-b);
+}

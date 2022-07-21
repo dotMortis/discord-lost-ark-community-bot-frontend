@@ -1,0 +1,178 @@
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+  background-color: var(--primary-color);
+  color: var(--text-color) !important;
+}
+.p-datatable .p-datatable-tbody > tr:not(.p-highlight):hover {
+  color: var(--text-color) !important;
+}
+.p-selectable-row .p-highlight td {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.p-datatable-thead {
+  color: var(--text-color) !important;
+  border-right-color: var(--surface-a);
+}
+.p-datatable-header {
+  color: var(--text-color);
+  background-color: var(--surface-a) !important;
+  border-bottom: 1px solid var(--surface-c) !important;
+}
+th {
+  color: var(--text-color);
+}
+.p-datatable-scrollable-header-box {
+  padding-right: 0px !important;
+  background-color: var(--surface-a);
+  border-left-color: var(--surface-a);
+}
+
+.p-datatable-scrollable-body {
+  overflow-y: auto !important;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  color: var(--text-color);
+  > i {
+    color: var(--text-color);
+  }
+}
+.p-datatable-table {
+  display: inline-grid !important;
+}
+
+.p-paginator {
+  border-bottom-color: var(--surface-a) !important;
+  background-color: var(--surface-a);
+  height: none;
+  padding: 0.2rem 0.2rem;
+  .p-paginator-current {
+    height: 2rem !important;
+  }
+  .p-button {
+    height: 2rem !important;
+  }
+  .p-dropdown {
+    height: 2rem !important;
+    .p-dropdown-item span {
+      font-size: small;
+    }
+  }
+  .p-paginator-pages {
+    .p-paginator-page {
+      background-color: transparent;
+      border: 0 none;
+      color: var(--text-color);
+      min-width: 3rem;
+      height: 2rem;
+      min-width: 2rem;
+      margin: 0.143rem;
+      transition: none;
+      border-radius: 50%;
+      &:not(.p-highlight) {
+        &:hover {
+          background: rgba(0, 0, 0, 0.04);
+          border-color: transparent;
+          color: var(--text-color);
+        }
+      }
+      &.p-highlight {
+        font-size: small;
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+        color: $color--white;
+      }
+    }
+  }
+  .p-paginator-element {
+    font-size: small;
+    color: var(--text-color);
+    height: 2rem !important;
+    min-width: 2rem !important;
+  }
+
+  .p-paginator-current {
+    color: var(--text-color);
+    font-size: small;
+  }
+  .p-dropdown-label.p-inputtext {
+    font-size: small;
+  }
+}
+.p-datatable-header {
+  padding: 0.35rem 0rem !important;
+}
+
+.p-treetable .p-treetable-tbody > tr.p-highlight {
+  background-color: var(--primary-color);
+  color: var(--text-color) !important;
+}
+.p-treetable-row .p-highlight td {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.p-treetable-thead {
+  color: var(--text-color) !important;
+  border-right-color: var(--surface-a);
+}
+.p-treetable-header {
+  color: var(--text-color);
+  background-color: var(--surface-a) !important;
+  border-bottom: 1px solid var(--surface-c) !important;
+  padding: 0.35rem 0rem !important;
+}
+th {
+  color: var(--text-color);
+}
+.p-treetable-scrollable-header-box {
+  padding-right: 0px !important;
+  background-color: var(--surface-a);
+  border-left-color: var(--surface-a);
+}
+
+.p-treetable-scrollable-body {
+  overflow-y: auto !important;
+}
+
+.p-treetable .p-treetable-thead > tr > th {
+  color: var(--text-color);
+  > i {
+    color: var(--text-color);
+  }
+}
+
+p-table {
+  .p-datatable table {
+    border-collapse: separate;
+    border-spacing: 0px;
+  }
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+  tr {
+    border-left: 0px;
+    &:hover {
+      background-color: var(--surface-c) !important;
+    }
+
+    &.p-highlight {
+      td {
+        &.first {
+          border-left: 6px solid var(--primary-color) !important;
+        }
+        .p-checkbox .p-checkbox-box,
+        .p-checkbox .p-checkbox-box:hover,
+        .p-checkbox .p-checkbox-box:focus {
+          border-color: $color--white !important;
+        }
+      }
+    }
+
+    &:not(:hover) td {
+      color: var(--text-color);
+      background-color: var(--surface-a) !important;
+    }
+    &:not(:hover):nth-child(even) td {
+      background-color: var(--surface-b) !important;
+    }
+  }
+}

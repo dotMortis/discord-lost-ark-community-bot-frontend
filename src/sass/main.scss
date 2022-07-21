@@ -1,0 +1,11 @@
+@import './_vars.scss';
+@import './_fonts.scss';
+@import './_app.scss';
+
+$fa-font-path: '~font-awesome/fonts';
+@import './../../node_modules/font-awesome/scss/font-awesome.scss';
+
+@import './customize_bootstrap.scss';
+@import './../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './custom-primeng-styles.scss';
+@import './custom.scss';

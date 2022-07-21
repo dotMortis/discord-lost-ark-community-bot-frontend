@@ -1,0 +1,41 @@
+p-treetable {
+  .p-treetable {
+    border-collapse: separate;
+    border-spacing: 0px;
+  }
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+  tr {
+    border-left: 0px;
+    &:hover {
+      background-color: var(--surface-c) !important;
+    }
+    &.p-highlight {
+      &:not(:hover) td {
+        color: var(--text-color);
+        background-color: var(--surface-a) !important;
+      }
+      &:not(:hover):nth-child(even) td {
+        background-color: var(--surface-b) !important;
+      }
+      &.selectable {
+        border-left: 6px solid var(--primary-color) !important;
+        td {
+          .p-checkbox .p-checkbox-box,
+          .p-checkbox .p-checkbox-box:hover,
+          .p-checkbox .p-checkbox-box:focus {
+            border-color: $color--white !important;
+          }
+        }
+      }
+    }
+
+    &:not(:hover) td {
+      color: var(--text-color);
+      background-color: var(--surface-a) !important;
+    }
+    &:not(:hover):nth-child(even) td {
+      background-color: var(--surface-b) !important;
+    }
+  }
+}

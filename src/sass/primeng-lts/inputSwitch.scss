@@ -1,0 +1,16 @@
+.p-inputswitch {
+    &.p-inputswitch-checked {
+        .p-inputswitch-slider {
+            background-color: var(--primary-color) !important;
+        }
+    }
+    .p-inputswitch-slider {
+        background-color: var(--surface-c) !important;
+        &:before {
+            background-color: var(--surface-b) !important;
+        }
+    }
+    .p-inputswitch-slider {
+        box-shadow: none !important;
+    }
+}

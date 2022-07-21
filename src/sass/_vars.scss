@@ -1,0 +1,75 @@
+//
+// Application Variables
+//-----------------------------------------------------
+
+// Primary font
+$body-font: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+// Smartfit Farben
+
+$color--green: #96bc33;
+$color--orange: #f29400;
+$color--darkGrey: #4a4a4a;
+$color--black: #1e1e1e;
+$color--midGrey: #89969f;
+$color--lightGrey: #b8c5d0;
+$color--white: #fff;
+
+$color--info: #a3def8;
+$color--red: red;
+$color--invalid: #b00020;
+
+$background1: #fff;
+$background2: #f6f8f9;
+$background3: #e2e6e8;
+$primaryColor: #007dbc;
+$primaryColorDarken: darken($primaryColor, 10);
+$primaryColorLighten: lighten($primaryColor, 30);
+$textColor: lighten(black, 10);
+$textGrey: #646464;
+//Disabled
+
+:root {
+  --surface-a: #fff;
+  --surface-b: #fafafa;
+  --surface-c: rgba(0, 0, 0, 0.04);
+  --surface-d: rgba(0, 0, 0, 0.12);
+  --surface-e: #5099f254;
+  --surface-f: #fff;
+  --text-color: #495057;
+  --primary-color: #{$primaryColor};
+  --primary-color-d: #{$primaryColorDarken};
+  --primary-color-l: #{$primaryColorLighten};
+  --primary-color-text: #fff;
+  --lines-color: #dcdbdb;
+  --text-disabled-color: #1d1d1d;
+  --today-color: black;
+}
+
+// Complementry color is used to indecate the loading bar on the top
+// of the page with pace.js plugin
+$complementry-color: adjust_hue($color--green, 180);
+
+$sidebar-width: 230px;
+
+// ------- Sidebar Colors --------
+
+// Background color of sidebar
+$sidebar-color: var(--surface-b);
+
+// -- Suggested sidebar background colors
+// dark  : #222d32
+// light : #f8f8f8
+
+// Sidebar accent varible is used to determine the color of the links
+// of the sidebar. The allowed values are 'light' or 'dark' only
+$sidebar-accent: light;
+
+// The following varibles indecate sidebar link color
+// and link hover color when using a dark sidebar color
+$sidebar-dark-color: #fff;
+$sidebar-dark-link-color: #fff;
+
+// The following varibles indecate sidebar link color
+// and link hover color when using a light sidebar color
+$sidebar-light-color: #000;
+$sidebar-light-link-color: #333;

@@ -1,0 +1,85 @@
+body {
+  color: var(--text-color) !important;
+}
+
+label {
+  background-color: var(--surface-a) !important;
+  font-size: 0.8rem !important;
+  color: var(--text-color);
+}
+
+input {
+  width: 100%;
+  font-size: 0.8rem !important;
+}
+
+.p-progressbar {
+  height: 20px;
+  background-color: $primaryColorLighten !important;
+  & .p-progressbar-value {
+    background-color: $primaryColor !important;
+  }
+  & .p-progressbar-label {
+    color: var(--surface-b) !important;
+    line-height: 20px;
+  }
+}
+
+.input-group-append .p-button {
+  height: 100% !important;
+}
+
+.p-treetable-toggler i {
+  color: var(--text-color);
+}
+
+.p-component {
+  font-size: 0.9rem;
+}
+
+.p-fileupload .p-button {
+  background-color: var(--primary-color) !important;
+  color: $color--white !important;
+}
+.p-contextmenu.p-component {
+  padding: 0px !important;
+}
+
+.p-float-label {
+  &:not(:hover):not(:focus):not(.p-inputwrapper-focus):not(.p-inputwrapper-filled) > label {
+    color: var(--text-color) !important;
+  }
+  &.p-inputwrapper-filled ~ label,
+  &.p-inputwrapper-focus > label,
+  &:hover > label,
+  &:focus > label {
+    color: var(--primary-color) !important;
+  }
+}
+
+//fixed Chrome autofill
+.p-float-label > input:-webkit-autofill ~ label {
+  top: -0.5rem !important;
+  padding: 2px 4px;
+  margin-left: -4px;
+  margin-top: 0rem !important;
+}
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label {
+  padding: 0px 4px !important;
+}
+
+.p-avatar {
+  color: var(--text-color) !important;
+  background-color: var(--surface-c);
+  img {
+    object-fit: cover;
+  }
+}
+.p-badge {
+  background: var(--primary-color);
+}
+
+.p-tooltip.customDate .p-tooltip-text {
+  width: 300px !important;
+}

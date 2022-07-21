@@ -1,0 +1,64 @@
+.p-toolbar,
+.p-table-caption,
+.p-table-summary {
+    background-color: var(--surface-a) !important;
+    border: 1px solid var(--surface-a) !important;
+}
+.p-table {
+    background-color: var(--surface-a);
+}
+
+.p-toolbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    div.p-toolbar-group-left {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        > :not(:last-child) {
+            margin-bottom: 0.571em;
+        }
+
+        > :last-child {
+            margin-bottom: 0.571em;
+        }
+
+        > :not(:last-child):not(i) {
+            margin-right: 0.25em;
+        }
+
+        > i {
+            align-self: center;
+            margin-left: 0.25em;
+            margin-right: 0.5em;
+            vertical-align: middle;
+        }
+    }
+
+    div.p-toolbar-group-right {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        > :not(:last-child) {
+            margin-bottom: 0.571em;
+        }
+
+        > :last-child {
+            margin-bottom: 0.571em;
+        }
+
+        > :not(:first-child):not(i) {
+            margin-left: 0.25em;
+        }
+
+        > i {
+            align-self: center;
+            margin-right: 0.25em;
+            margin-left: 0.5em;
+            vertical-align: middle;
+        }
+    }
+}

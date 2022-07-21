@@ -1,0 +1,41 @@
+.p-overlaypanel {
+  color: var(--text-color) !important;
+}
+.p-overlaypanel-content {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+  p {
+    margin-bottom: 0.5rem !important;
+  }
+}
+.p-overlaypanel {
+  background-color: var(--surface-a);
+  border: 1px solid var(--surface-c);
+  &:after {
+    border-top-color: transparent;
+    border-bottom: 1px solid var(--surface-c);
+    border-bottom-color: var(--surface-a);
+  }
+  &:before {
+    border-top-color: transparent;
+    border-bottom: 1px solid var(--surface-c);
+    border-bottom-color: var(--surface-c);
+  }
+  .p-overlaypanel-close:enabled {
+    background-color: $color--red !important;
+    &:hover {
+      background-color: darken($color--red, 10) !important;
+    }
+  }
+}
+.p-overlaypanel-content {
+  background-color: var(--surface-a);
+  padding: 0.5rem !important;
+}
+.p-overlaypanel.p-overlaypanel-flipped {
+  &:after {
+    border-top-color: transparent;
+  }
+  &:before {
+    border-top-color: transparent;
+  }
+}

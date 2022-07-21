@@ -1,0 +1,35 @@
+.p-orderlist {
+  height: 500px;
+  .p-orderlist-item.cdk-drag-placeholder {
+    opacity: 50%;
+  }
+  .p-orderlist-filter-container {
+    background: var(--surface-a);
+    border-color: var(--surface-c);
+  }
+  .p-orderlist-container {
+    background: var(--surface-a);
+    border-color: var(--surface-c);
+  }
+  .p-orderlist-list {
+    background: var(--surface-a);
+    border-color: var(--surface-c);
+    height: 90%;
+    .p-orderlist-item {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+      &.p-highlight {
+        background: var(--primary-color-l) !important;
+        color: var(--primary-color-d) !important;
+      }
+      &:not(.p-highlight) {
+        color: var(--text-color) !important;
+      }
+      &:hover {
+        background: var(--primary-color-l) !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.p-slidemenu .p-slidemenu-overlay {
+  background-color: var(--surface-b) !important;
+}
+.p-slidemenu {
+  background-color: var(--surface-a);
+  .p-menuitem:hover {
+    background-color: var(--surface-c);
+    .p-menuitem-icon,
+    .p-menuitem-text {
+      color: var(--text-color);
+    }
+  }
+  .p-menuitem-icon,
+  .p-menuitem-text {
+    color: var(--text-color);
+  }
+  .p-slidemenu-content {
+    .p-menuitem-icon,
+    .p-menuitem-text {
+      color: var(--text-color) !important;
+    }
+    .p-menuitem:hover {
+      border-left: 5px solid var(--primary-color);
+      color: var(--text-color) !important;
+    }
+  }
+}

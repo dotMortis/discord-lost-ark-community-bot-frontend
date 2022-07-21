@@ -1,0 +1,52 @@
+.p-confirm-dialog-message {
+  margin-left: 0px !important;
+}
+.p-confirm-dialog-reject {
+  &:enabled {
+    background-color: $color--lightGrey !important;
+    color: lighten(black, 30);
+    &:hover {
+      background-color: darken($color--lightGrey, 10);
+      color: lighten(black, 30) !important;
+    }
+  }
+}
+.p-dialog.dark-mode {
+  border: 1px solid var(--primary-color);
+}
+
+.p-dialog-content {
+  padding: 0.5rem !important;
+  background-color: var(--surface-a) !important;
+  color: var(--text-color) !important;
+  overflow-x: hidden;
+}
+.p-dialog-header-icon,
+.p-dialog-header-close {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.p-dialog-header {
+  padding: 0.5rem !important;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  .p-dialog-title {
+    font-weight: normal !important;
+  }
+}
+.p-dialog-footer {
+  padding: 0.5rem !important;
+  input {
+    background-color: var(--surface-a) !important;
+  }
+  background-color: var(--surface-a) !important;
+  color: var(--text-color) !important;
+  .p-checkbox-label {
+    margin: auto;
+    margin-left: 5px;
+    background-color: var(--surface-a) !important;
+  }
+  .p-checkbox-box:not(.p-highlight) {
+    background-color: var(--surface-a) !important;
+  }
+}

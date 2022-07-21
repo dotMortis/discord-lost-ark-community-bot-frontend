@@ -1,0 +1,29 @@
+.p-contextmenu {
+  background-color: var(--surface-b);
+  .p-menuitem-link {
+    .p-menuitem-icon,
+    .p-menuitem-text {
+      color: var(--text-color);
+    }
+  }
+  color: var(--text-color) !important;
+  .p-menuitem:hover {
+    background-color: var(--surface-c) !important;
+    color: var(--text-color);
+    .p-menuitem-link {
+      .p-menuitem-icon,
+      .p-menuitem-text {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .p-menuitem.p-menuitem-active > .p-menuitem-link {
+    .p-menuitem-text,
+    .p-menuitem-icon,
+    .p-submenu-text,
+    .p-submenu-icon {
+      color: var(--text-color) !important;
+    }
+  }
+}

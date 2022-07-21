@@ -1,0 +1,33 @@
+.p-tieredmenu .p-tieredmenu-content {
+  .p-menuitem-icon,
+  .p-menuitem-text {
+    color: var(--text-color) !important;
+  }
+  .p-menuitem:not(.p-menuitem-active):hover {
+    border-left: 5px solid var(--primary-color);
+    color: var(--text-color) !important;
+  }
+}
+.p-tieredmenu-overlay {
+  background-color: var(--surface-b) !important;
+
+  .p-menuitem-icon,
+  .p-menuitem-text {
+    color: var(--text-color) !important;
+  }
+  .p-menuitem.p-element:hover {
+    border-left: 5px solid var(--primary-color);
+    color: var(--text-color) !important;
+  }
+  .p-menuitem:not(.p-element):hover > :not(.p-menuitem-link-active) {
+    border-left: 5px solid var(--primary-color);
+    color: var(--text-color) !important;
+  }
+  .p-menuitem:not(.p-element) > .p-menuitem-link-active {
+    &:hover {
+      background-color: var(--surface-b);
+    }
+    border-left: 5px solid var(--primary-color-d);
+    color: var(--text-color) !important;
+  }
+}

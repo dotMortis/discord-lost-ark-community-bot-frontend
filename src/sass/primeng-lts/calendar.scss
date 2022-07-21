@@ -1,0 +1,116 @@
+.p-calendar {
+    background-color: transparent;
+    &.p-calendar-w-btn {
+        width: 100%;
+        .p-inputtext {
+            background-image: none;
+        }
+        .p-datepicker-trigger.p-button {
+            display: flex;
+            background-color: var(--primary-color);
+            color: $color--white;
+            .p-button-icon,
+            .p-button-icon:hover {
+                color: $color--white;
+            }
+
+            &:hover,
+            &:active {
+                background-color: var(--primary-color-d);
+                color: var(--surface-b);
+            }
+        }
+    }
+}
+
+.p-calendar {
+    border-color: var(--surface-c);
+    .p-inputtext:enabled:hover {
+        border: none !important;
+    }
+    &.p-calendar-w-btn:hover {
+        border-color: var(--primary-color);
+    }
+    .p-button-icon {
+        color: var(--text-color);
+    }
+}
+
+.p-datepicker {
+    z-index: 2000 !important;
+    background-color: var(--surface-a) !important;
+    color: var(--text-color);
+    .p-datepicker-header {
+        padding: 0px;
+        background-color: var(--surface-a) !important;
+        color: var(--text-color);
+    }
+    .p-datepicker-calendar tr {
+        text-align: center;
+        th {
+            padding: 0px;
+            span {
+                margin: 2px;
+                color: var(--text-color);
+            }
+        }
+    }
+    table td {
+        background-color: var(--surface-a);
+        padding: 0px;
+        > span {
+            background-color: var(--surface-a);
+            color: var(--text-color);
+            &.p-highlight {
+                color: $color--white;
+                background: var(--primary-color);
+                border: none !important;
+            }
+        }
+        &.p-datepicker-today span {
+            &:not(.p-highlight) {
+                color: var(--text-color) !important;
+                background-color: var(--surface-a);
+                border: 2px solid var(--today-color) !important;
+            }
+            &.p-highlight {
+                color: $color--white;
+                background: var(--primary-color);
+                border: 2px solid var(--today-color) !important;
+            }
+        }
+    }
+    .p-link {
+        color: var(--text-color) !important;
+    }
+    .p-datepicker-buttonbar {
+        .p-button {
+            color: $color--white;
+            &:focus,
+            &:hover {
+                color: $color--white;
+                background-color: var(--primary-color-d);
+            }
+        }
+    }
+}
+
+.p-calendar input {
+    width: 100% !important;
+    min-width: 100px;
+}
+
+select {
+    background-color: var(--surface-b);
+    color: var(--text-color);
+}
+
+.p-timepicker {
+    padding: 0px !important;
+    > div {
+        padding: 0 0.1rem !important;
+    }
+    span {
+        font-size: 1rem !important;
+    }
+}

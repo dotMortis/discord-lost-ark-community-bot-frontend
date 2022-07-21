@@ -1,0 +1,6 @@
+.p-sidebar {
+  background-color: var(--surface-a);
+  &.dark-mode {
+    border-left: 1px solid var(--primary-color);
+  }
+}

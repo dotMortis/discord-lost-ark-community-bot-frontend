@@ -1,0 +1,19 @@
+.p-panel {
+  box-shadow: 0 3px 3px 0 rgb(66 66 66 / 25%), 0 3px 5px 3px rgb(66 66 66 / 10%) !important;
+  border: 1px solid var(--surface-c);
+  &:not(.collapsed-item) {
+    height: 100%;
+  }
+  .p-panel-content,
+  .p-panel-header {
+    padding: 0.35rem !important;
+    background-color: var(--surface-a);
+    color: var(--text-color);
+  }
+  .p-panel-header {
+    margin-left: 0.5rem !important;
+  }
+  .p-panel-header-icon {
+    color: var(--text-color) !important;
+  }
+}
