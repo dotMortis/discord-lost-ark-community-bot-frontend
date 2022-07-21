@@ -1,3 +1,24 @@
-<div class="container">
-    <h1>OGOG</h1>
+<div class="login-form">
+    <div>
+        <h2 class="mb-4">Login</h2>
+        <form (ngSubmit)="onLogin()" [formGroup]="loginForm">
+            <label for="username">Username: </label>
+            <input
+                id="username"
+                autocomplete="off"
+                type="text"
+                formControlName="username"
+                class="mb-3"
+            />
+            <label for="password">Password: </label>
+            <input
+                id="password"
+                autocomplete="new-password"
+                type="password"
+                formControlName="password"
+                class="mb-3"
+            />
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 </div>

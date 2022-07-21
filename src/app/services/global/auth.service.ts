@@ -12,8 +12,8 @@ import { environment } from 'src/environments/environment';
 export class AuthService {
     constructor(private http: HttpClient, private router: Router) {}
 
-    login(email: string, password: string): Observable<boolean> {
-        const hashValue: string = Buffer.from(email + ':' + password).toString('base64');
+    login(username: string, password: string): Observable<boolean> {
+        const hashValue: string = Buffer.from(username + ':' + password).toString('base64');
         return this.http
             .get<any>(environment.apiRoot + '/login/', {
                 headers: {
