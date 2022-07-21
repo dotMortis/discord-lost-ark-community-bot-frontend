@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "allowedCommonJsDependencies": ["@bits_devel/socket.io-client2","@bits_devel/api-error2"],
+                        "allowedCommonJsDependencies": ["buffer"],
                         "outputPath": "dist/discord-lost-ark-community-bot-frontend",
                         "index": "src/index.html",
                         "main": "src/main.ts",

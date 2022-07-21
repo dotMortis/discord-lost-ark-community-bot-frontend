@@ -28,7 +28,7 @@
     "@angular/platform-browser": "^13.2.2",
     "@angular/platform-browser-dynamic": "^13.2.2",
     "@angular/router": "^13.2.2",
-    "@bits_devel/api-error2": "^3.1.0",
+    "@bits_devel/api-error2": "^4.0.1",
     "@ng-bootstrap/ng-bootstrap": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
